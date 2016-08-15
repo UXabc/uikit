@@ -1,0 +1,948 @@
+/* =============== Color =============== */
+
+:root {
+	--white: #ffffff;
+	--cool-grey-100: #fafafa;
+	--cool-grey-200: #f3f4f5;
+	--cool-grey-300: #e3e7ed;
+	--cool-grey-400: #cbd1dc;
+	--cool-grey-500: #b3b9c7;
+	--cool-grey-600: #9499a8;
+	--cool-grey-700: #5a6070;
+	--cool-grey-800: #333640;
+	--cool-grey-900: #1a1c21;
+	--black: #000000;
+}
+
+
+/* =============== Grid Adjustments =============== */
+
+@media (min-width: 544px){
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        /* 940 -> 936 */
+        max-width: 936px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Gutter 30px -> 48px */
+
+.container, .container-fluid {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.row {
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+/* =============== Typography Overrides =============== */
+
+@media (max-width: 543px){
+    html {
+        /*font-size: 14px;*/
+    }
+}
+
+body {
+    color: var(--cool-grey-800);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+body, input, textarea, select, button {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga', 'kern';
+    direction: ltr;
+}
+
+.inverse {
+    color: var(--white);
+}
+
+.footnote {
+    color: var(--cool-grey-500);
+    font-size: 12px;
+}
+
+a.linklabel {
+    color: #48BE0D;
+    font-weight: 500;
+    transition: color .3s;
+}
+a.linklabel:hover, a.linklabel:focus {
+    color: #538E35;
+    text-decoration: none;
+}
+
+/*
+    SF Text
+    100 SF Text Light     = PingFang Light
+    200 SF Text Light     = PingFang Light
+    300 SF Text Light     = PingFang Light
+    400 SF Text Regular   = PingFang Regular
+    500 SF Text Medium    = PingFang Medium
+    600 SF Text Semibold  = PingFang Medium
+    700 SF Text Bold      = PingFang Medium
+    800 SF Text Heavy     = PingFang Medium
+    900 SF Text Heavy     = PingFang Medium
+
+    SF Display
+    Ultralight  100 = PingFang Ultralight
+    Thin        200 = PingFang Light
+    Light       300 = PingFang Light
+    Regular     400 = PingFang Regular
+    Medium      500 = PingFang Medium
+    Semibold    600 = PingFang Medium
+    Bold        700 = PingFang Medium
+    Heavy       800 = PingFang Medium
+*/
+
+.hero {
+    background-image: url(img/ios10hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+
+@media (max-width: 767px){
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.hero-icon {
+    width: 96px;
+    height: 96px;
+    background-image: url(img/ic_ios10.png);
+    background-repeat: no-repeat;
+    background-size: 96px 96px;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .hero-icon {
+        width: 96px;
+        height: 96px;
+        background-image: url(img/ic_ios10_2x.png);
+        background-repeat: no-repeat;
+        background-size: 96px 96px;
+    }
+}
+
+.hero-title {
+    font-weight: 100;
+}
+
+@media (max-width: 543px){
+    .hero-title {
+        font-size: 2.8rem;
+        font-weight: 200;
+    }
+}
+
+.hero-intro {
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: .7;
+    line-height: 1.6;
+}
+
+.btn-dl {
+    border: 0;
+    background-color: var(--white);
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3F4F5 64%, #E3E6ED 100%);
+    background-position: center 60px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: #64D72A;
+    padding: .8rem 3rem;
+    margin-bottom: .8rem;
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+.btn-dl:hover, .btn-dl:focus {
+    background-color: var(--white);
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3F4F5 64%, #E3E6ED 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #64D72A;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.5);
+    transition: all .2s;
+}
+
+.btn-dl:active {
+    background-color: var(--white);
+    background-image: linear-gradient(-180deg, #E3E6ED 0%, #F3F4F5 32%, #FFFFFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #64D72A;
+    box-shadow: none;
+}
+
+.cta-label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cta-caption {
+    display: block;
+    margin-top: 5px;
+}
+
+.version small {
+    opacity: .4;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.section {
+    padding-top: 140px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 767px){
+    .section {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+}
+
+.sec-copy {
+    margin-bottom: 70px;
+}
+
+.sec-title {
+    color: var(--cool-grey-900);
+    font-weight: 200;
+    font-size: 2.6rem;
+    margin-bottom: .7em!important;
+}
+
+@media (max-width: 543px){
+    .sec-title {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+}
+
+.inverse {
+    color: var(--white);
+}
+
+
+.sec-fig {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Overview image */
+.fig-overview {
+    width: 1090px;
+    height: 639px;
+    background-image: url(img/fig-overview_lg.jpg);
+    background-size: 1090px 639px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .fig-overview {
+        background-image: url(img/fig-overview_lg_2x.jpg);
+    }
+}
+
+/* LG */
+@media only screen and (max-width: 1199px) {
+    .fig-overview {
+        width: 888px;
+        height: 521px;
+        background-image: url(img/fig-overview_lg.jpg);
+        background-size: 888px 521px;
+    }
+}
+
+/* LG @2x */
+@media only screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1199px) and (min-resolution: 1.5dppx), only screen and (max-width: 1199px) and (min-resolution: 144dpi) {
+    .fig-overview {
+        background-image: url(img/fig-overview_lg_2x.jpg);
+    }
+}
+
+/* MD */
+@media only screen and (max-width: 991px) {
+    .fig-overview {
+        width: 672px;
+        height: 394px;
+        background-image: url(img/fig-overview_lg.jpg);
+        background-size: 672px 394px;
+    }
+}
+
+/* MD @2x */
+@media only screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 991px) and (min-resolution: 1.5dppx), only screen and (max-width: 991px) and (min-resolution: 144dpi) {
+    .fig-overview {
+        background-image: url(img/fig-overview_lg.jpg);
+    }
+}
+
+/* XS-SM */
+@media only screen and (max-width: 767px) {
+    .section-overview .sec-fig {
+        height: 394px;
+    }
+    .fig-overview {
+        background-image: url(img/fig-overview_lg.jpg);
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate3d(-50%,0,0);
+    }
+}
+
+/* XS-SM @2x */
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-resolution: 1.5dppx), only screen and (max-width: 767px) and (min-resolution: 144dpi) {
+    .fig-overview {
+        background-image: url(img/fig-overview_lg.jpg);
+    }
+}
+
+/* XS */
+@media only screen and (max-width: 543px) {
+    .fig-overview {
+        left: 1.5rem;
+        transform: translate3d(0,0,0);
+    }
+}
+
+/* XS @2x */
+@media only screen and (max-width: 543px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 543px) and (min-resolution: 1.5dppx), only screen and (max-width: 543px) and (min-resolution: 144dpi) {
+    .fig-overview {
+        background-image: url(img/fig-overview_lg.jpg);
+    }
+}
+/* Overview image */
+
+
+
+
+
+.section-symbols {
+    width: 100%;
+    padding-bottom: 750px;
+    background-image: url(img/fig-symbols1_lg.jpg);
+    background-size: 1794px 1050px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-bottom: -180px;
+    position: relative;
+}
+
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-symbols {
+        background-image: url(img/fig-symbols1_lg_2x.jpg);
+    }
+}
+
+/* MD */
+@media only screen and (max-width: 991px) {
+    .section-symbols {
+        padding-bottom: 550px;
+        background-image: url(img/fig-symbols1_lg.jpg);
+        background-size: 1334px 780px;
+        margin-bottom: -120px;
+    }
+}
+
+/* MD @2x */
+@media only screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 991px) and (min-resolution: 1.5dppx), only screen and (max-width: 991px) and (min-resolution: 144dpi) {
+    .section-symbols {
+        background-image: url(img/fig-symbols1_lg_2x.jpg);
+    }
+}
+
+/* SM */
+@media only screen and (max-width: 767px) {
+    .section-symbols {
+        padding-bottom: 420px;
+        background-image: url(img/fig-symbols1_sm.jpg);
+        background-size: 1024px 599px;
+    }
+}
+
+/* SM @2x */
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-resolution: 1.5dppx), only screen and (max-width: 767px) and (min-resolution: 144dpi) {
+    .section-symbols {
+        background-image: url(img/fig-symbols1_sm_2x.jpg);
+    }
+}
+
+.section-symbols .sec-fig {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+}
+
+.fig-symbols1 {
+    width: 256px;
+    height: 259px;
+    background-image: url(img/fig-symbols1.png);
+    background-size: 256px 259px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: 195px;
+    top: 280px;
+}
+
+.fig-symbols2 {
+    width: 343px;
+    height: 346px;
+    background-image: url(img/fig-symbols2.png);
+    background-size: 343px 346px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -840px;
+    top: 140px;
+}
+
+.fig-symbols3 {
+    width: 394px;
+    height: 403px;
+    background-image: url(img/fig-symbols3.png);
+    background-size: 393px 403px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    top: 150px;
+}
+
+
+@media (max-width: 991px){
+    .section-symbols .sec-fig {
+        height: 700px;
+    }
+
+    .fig-symbols1 {
+        width: 189px;
+        height: 192px;
+        background-size: 189px 192px;
+        margin-left: 140px;
+        top: 240px;
+    }
+
+    .fig-symbols2 {
+        width: 254px;
+        height: 256px;
+        background-size: 254px 256px;
+        margin-left: -600px;
+        top: 120px;
+    }
+
+    .fig-symbols3 {
+        width: 292px;
+        height: 294px;
+        background-size: 292px 294px;
+        margin-left: -350px;
+        top: 160px;
+    }
+}
+
+@media (max-width: 767px){
+    .section-symbols .sec-fig {
+        height: 500px;
+    }
+
+    .fig-symbols1 {
+        width: 146px;
+        height: 148px;
+        background-size: 146px 148px;
+        margin-left: 110px;
+        top: 145px;
+    }
+
+    .fig-symbols2 {
+        width: 196px;
+        height: 197px;
+        background-size: 196px 197px;
+        margin-left: -460px;
+        top: 50px;
+    }
+
+    .fig-symbols3 {
+        width: 225px;
+        height: 230px;
+        background-size: 225px 230px;
+        margin-left: -270px;
+        top: 40px;
+    }
+}
+
+
+
+
+
+.badges {
+    margin-bottom: 50px;
+}
+
+.badge-value {
+    font-weight: 100;
+    font-size: 4rem;
+    line-height: 1;
+    color: #67CE7D;
+    letter-spacing: 0;
+    display: block;
+}
+
+.badge-label {
+}
+.section-symbols .sec-copy {
+}
+.section-symbols .badges {
+}
+
+
+.section-resizable {
+    padding-bottom: 150px;
+}
+
+@media (max-width: 767px){
+    .section-resizable {
+        padding-bottom: 100px;
+    }
+}
+
+.fig-resizable {
+    width: 591px;
+    height: 110px;
+    background-image: url(img/fig-resizable.png);
+    background-size: 591px 110px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .fig-resizable {
+        background-image: url(img/fig-resizable.png);
+    }
+}
+
+/* SM */
+@media only screen and (max-width: 767px) {
+    .fig-resizable {
+        width: 486px;
+        height: 90px;
+        background-image: url(img/fig-resizable.png);
+        background-size: 486px 90px;
+    }
+}
+
+/* SM @2x */
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-resolution: 1.5dppx), only screen and (max-width: 767px) and (min-resolution: 144dpi) {
+    .fig-resizable {
+        background-image: url(img/fig-resizable.png);
+    }
+}
+
+/* XS */
+@media only screen and (max-width: 543px) {
+    .section-resizable .sec-fig {
+        min-height: 70px;
+    }
+    .fig-resizable {
+        background-image: url(img/fig-resizable.png);
+        background-size: 377px 70px;
+        width: 377px;
+        height: 70px;
+        position: absolute;
+        left: 2rem;
+        top: 0;
+    }
+}
+
+/* XS @2x */
+@media only screen and (max-width: 543px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 543px) and (min-resolution: 1.5dppx), only screen and (max-width: 543px) and (min-resolution: 144dpi) {
+    .fig-resizable {
+        background-image: url(img/fig-resizable.png);
+    }
+}
+
+
+
+.section-icons {
+    background-color: var(--cool-grey-800);
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+@media (max-width: 767px){
+    .section-icons {
+        padding-bottom: 100px;
+    }
+}
+
+.section-icons .sec-hero {
+    position: relative;
+    height: 640px;
+    margin-bottom: -80px;
+}
+
+.fig-icons1 {
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+    background-image: url(img/fig-icons1_lg_2x.jpg);
+    background-size: 1095px 648px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 1095px;
+    height: 648px;
+}
+
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .fig-icons1 {
+        background-image: url(img/fig-icons1_lg_2x.jpg);
+    }
+}
+
+/* MD 0.7 */
+@media only screen and (max-width: 991px) {
+    .section-icons .sec-hero {
+        height: 490px;
+        margin-bottom: -80px;
+    }
+    .fig-icons1 {
+        width: 767px;
+        height: 454px;
+        background-image: url(img/fig-icons1_md.jpg);
+        background-size: 767px 454px;
+        left: -60px;
+        bottom: 100px;
+    }
+}
+
+/* MD @2x */
+@media only screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 991px) and (min-resolution: 1.5dppx), only screen and (max-width: 991px) and (min-resolution: 144dpi) {
+    .fig-icons1 {
+        background-image: url(img/fig-icons1_md_2x.jpg);
+    }
+}
+
+/* XS 0.6 */
+@media only screen and (max-width: 543px) {
+    .section-icons .sec-hero {
+        height: 430px;
+    }
+    .fig-icons1 {
+        bottom: 80px;
+        left: -180px;
+    }
+}
+
+
+.section-type {
+    padding-bottom: 120px;
+}
+
+@media (max-width: 767px){
+    .section-type {
+        padding-bottom: 100px;
+    }
+}
+
+
+.section-examples {
+    padding-top: 0;
+    background-color: #f3f4f6;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-examples .sec-hero {
+    position: relative;
+    height: 650px;
+    margin-bottom: 0px;
+}
+
+.fig-examples {
+    position: absolute;
+    left: -200px;
+    top: -200px;
+    width: 1598px;
+    height: 1008px;
+    background-image: url(img/fig-example_lg.jpg);
+    background-size: 1598px 1008px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .fig-examples {
+        background-image: url(img/fig-example_lg_2x.jpg);
+    }
+}
+
+/* MD */
+@media only screen and (max-width: 991px) {
+    .fig-examples {
+        left: -240px;
+        top: -200px;
+    }
+}
+
+/* SM */
+@media only screen and (max-width: 767px) {
+    .section-examples .sec-hero {
+        height: 520px;
+        margin-bottom: 0px;
+    }
+    .fig-examples {
+        position: absolute;
+        left: -180px;
+        top: -130px;
+        width: 1014px;
+        height: 640px;
+        background-image: url(img/fig-example_lg.jpg);
+        background-size: 1014px 640px;
+    }
+}
+
+/* SM @2x */
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 767px) and (min-resolution: 1.5dppx), only screen and (max-width: 767px) and (min-resolution: 144dpi) {
+    .fig-examples {
+        background-image: url(img/fig-example_lg_2x.jpg);
+    }
+}
+
+/* XS */
+@media only screen and (max-width: 543px) {
+    .section-examples .sec-hero {
+        height: 360px;
+        margin-bottom: 0px;
+    }
+    .fig-examples {
+        position: absolute;
+        left: -100px;
+        top: -90px;
+        width: 680px;
+        height: 430px;
+        background-image: url(img/fig-example_lg.jpg);
+        background-size: 680px 430px;
+    }
+}
+
+/* XS @2x */
+@media only screen and (max-width: 543px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 543px) and (min-resolution: 1.5dppx), only screen and (max-width: 543px) and (min-resolution: 144dpi) {
+    .fig-examples {
+        background-image: url(img/fig-example_lg.jpg);
+    }
+}
+
+
+.showcase-stopwatch {
+    width: 100%;
+    height: 470px;
+    background-color: var(--cool-grey-900);
+    position: relative;
+    overflow: hidden;
+}
+
+.fig-stopwatch {
+    width: 1520px;
+    height: 823px;
+    background-image: url(img/fig-stopwatch_lg.jpg);
+    background-size: 1520px 823px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: -200px;
+    margin-left: -800px;
+}
+
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .fig-stopwatch {
+        background-image: url(img/fig-stopwatch_lg_2x.jpg);
+    }
+}
+
+/* MD */
+@media only screen and (max-width: 991px) {
+    .showcase-stopwatch {
+        height: 400px;
+    }
+    .fig-stopwatch {
+        width: 1193px;
+        height: 646px;
+        background-image: url(img/fig-stopwatch_lg.jpg);
+        background-size: 1193px 646px;
+        left: 50%;
+        top: -140px;
+        margin-left: -550px;
+    }
+}
+
+/* MD @2x */
+@media only screen and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 991px) and (min-resolution: 1.5dppx), only screen and (max-width: 991px) and (min-resolution: 144dpi) {
+    .fig-stopwatch {
+        background-image: url(img/fig-stopwatch_lg_2x.jpg);
+    }
+}
+
+/* XS */
+@media only screen and (max-width: 543px) {
+    .showcase-stopwatch {
+        height: 300px;
+    }
+    .fig-stopwatch {
+        width: 760px;
+        height: 412px;
+        background-image: url(img/fig-stopwatch_lg.jpg);
+        background-size: 760px 412px;
+        left: 50%;
+        top: -120px;
+        margin-left: -380px;
+    }
+}
+
+/* XS @2x */
+@media only screen and (max-width: 543px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 543px) and (min-resolution: 1.5dppx), only screen and (max-width: 543px) and (min-resolution: 144dpi) {
+    .fig-stopwatch {
+        background-image: url(img/fig-stopwatch_lg.jpg);
+    }
+}
+
+
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: var(--cool-grey-900);
+}
+
+.share-label {
+    position: relative;
+}
+
+.share-label h4 {
+    font-weight: 300;
+    display: inline-block;
+    background-color: var(--cool-grey-900);
+    position: relative;
+    z-index: 3;
+}
+
+.share-label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 1px;
+    background-color: var(--cool-grey-800);
+    left: 2rem;
+    right: 2rem;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.shares {
+    
+}
+
+.share {
+    height: 20px;
+    display: inline-block;
+}
+
+.share-fb {
+}
+
+
+.hello {
+    color: var(--cool-grey-600);
+    font-size: 12px;
+}
+
+
+
+
+
+/* Responsive Utilities */
+
+@media (min-width: 544px){
+}
+
+@media (min-width: 768px){
+}
+
+@media (min-width: 992px){
+}
+
+@media (min-width: 1200px){
+}
+
+
+@media (max-width: 1199px){
+}
+
+@media (max-width: 991px){
+}
+
+@media (max-width: 767px){
+}
+
+@media (max-width: 543px){
+}
+
