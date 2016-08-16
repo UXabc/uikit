@@ -373,6 +373,7 @@ figure {
     background-repeat: no-repeat;
     margin-bottom: -180px;
     position: relative;
+    overflow: hidden;
 }
 
 /* @2x */
@@ -421,6 +422,7 @@ figure {
     left: 0;
     width: 100%;
     height: 900px;
+    overflow: visible;
 }
 
 .fig-symbols1 {
@@ -433,7 +435,7 @@ figure {
     position: absolute;
     left: 50%;
     margin-left: 195px;
-    top: 280px;
+    top: 310px;
 }
 
 .fig-symbols2 {
@@ -446,7 +448,7 @@ figure {
     position: absolute;
     left: 50%;
     margin-left: -840px;
-    top: 140px;
+    top: 240px;
 }
 
 .fig-symbols3 {
@@ -459,7 +461,7 @@ figure {
     position: absolute;
     left: 50%;
     margin-left: -450px;
-    top: 150px;
+    top: 390px;
 }
 
 
@@ -473,7 +475,7 @@ figure {
         height: 192px;
         background-size: 189px 192px;
         margin-left: 140px;
-        top: 240px;
+        top: 270px;
     }
 
     .fig-symbols2 {
@@ -481,7 +483,7 @@ figure {
         height: 256px;
         background-size: 254px 256px;
         margin-left: -600px;
-        top: 120px;
+        top: 200px;
     }
 
     .fig-symbols3 {
@@ -489,7 +491,7 @@ figure {
         height: 294px;
         background-size: 292px 294px;
         margin-left: -350px;
-        top: 160px;
+        top: 320px;
     }
 }
 
@@ -503,7 +505,7 @@ figure {
         height: 148px;
         background-size: 146px 148px;
         margin-left: 110px;
-        top: 145px;
+        top: 165px;
     }
 
     .fig-symbols2 {
@@ -511,7 +513,7 @@ figure {
         height: 197px;
         background-size: 196px 197px;
         margin-left: -460px;
-        top: 50px;
+        top: 110px;
     }
 
     .fig-symbols3 {
@@ -519,7 +521,7 @@ figure {
         height: 230px;
         background-size: 225px 230px;
         margin-left: -270px;
-        top: 40px;
+        top: 220px;
     }
 }
 
