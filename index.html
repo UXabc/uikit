@@ -12,7 +12,7 @@
     <meta name="Description" content="A collection of GUI elements for Sketch, helps you design both iPhone and iPad apps." />
 
     <!-- OG & Favicon -->
-    <meta property="og:url" content="http://guikit.design" />
+    <meta property="og:url" content="http://guikit.design/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="iOS 10 Adaptive UI Kit for Sketch" />
     <meta property="og:description" content="A collection of GUI elements for Sketch, helps you design both iPhone and iPad apps." />
@@ -45,6 +45,17 @@
     </head>
 
     <body>
+        
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
         
         <div class="hero">
             <div class="container">
@@ -240,10 +251,13 @@
             <div class="share-label inverse text-xs-center m-b-2"><h4 class="p-x-1">Share this Kit</h4></div>
             <div class="shares text-xs-center">
                 <div class="share share-fb m-r-1">
-                    <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fguikit.design&layout=button_count&size=small&mobile_iframe=true&width=63&height=20&appId" width="63" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <div class="fb-share-button" data-href="http://guikit.design/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fguikit.design%2F&amp;src=sdkpreparse">Share</a></div>
+                </div>
+                <div class="share share-fb-save m-r-1">
+                    <div class="fb-save" data-uri="http://guikit.design/" data-size="large"></div>
                 </div>
                 <div class="share share-tw">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
             <p class="hello small text-xs-center inverse m-t-3">Created by <a class="linklabel" href="https://www.facebook.com/chihyueh.hu" target="_blank" onclick="ga('send', 'event', 'button', 'link click', 'author');">Taylor Hu</a> · Proudly made in Taiwan.</p>
