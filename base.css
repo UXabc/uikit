@@ -906,9 +906,10 @@ footer {
 .share {
     line-height: normal;
     display: inline-block;
-    height: 28px;
+    height: 20px;
     vertical-align: bottom;
-    
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .hello {
