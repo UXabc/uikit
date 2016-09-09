@@ -1,61 +1,7 @@
 
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 100;
-src:
-    local('PingfangTC-Ultralight');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 200;
-src:
-    local('PingfangTC-Thin');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 300;
-src:
-    local('PingfangTC-Light');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 400;
-src:
-    local('PingfangTC-Regular');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 500;
-src:
-    local('PingfangTC-Medium');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 600;
-src:
-    local('PingfangTC-Medium');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 700;
-src:
-    local('PingfangTC-Medium');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 800;
-src:
-    local('PingfangTC-Semibold');
-}
-@font-face {
-font-family: "pingfang-tc";
-font-weight: 900;
-src:
-    local('PingfangTC-Semibold');
-}
 
 body {
-    font-family: "acumin-pro", "source-han-sans-traditional", -apple-system, BlinkMacSystemFont, "Pingfang-tc", "Segoe UI", Roboto, "Helvetica Neue", "Microsoft JhengHei", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-family: "acumin-pro", "source-han-sans-traditional", "Segoe UI", Roboto, "Helvetica Neue", "Microsoft JhengHei", "Microsoft YaHei", Helvetica, Arial, sans-serif;
 }
 
 body, input, textarea, select, button {
