@@ -269,6 +269,7 @@ header {
 
 header .hero {
 	height: 320px;
+    position: relative;
 }
 
 @media (max-width: 767px){
@@ -321,6 +322,36 @@ header h1 .text-hide {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 14px 10px;
+}
+
+.lan {
+    position: absolute;
+    right: 24px;
+    top: 25px;
+}
+
+.lan a:hover {
+    color: #fff;
+}
+
+.lan a.current {
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+}
+
+.lan a.current:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px){
+    .lan {
+        right: auto;
+        left: 50%;
+        bottom: 0;
+        top: auto;
+        transform: translateX(-50%);
+    }
 }
 
 main {
